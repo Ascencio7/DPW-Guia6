@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+}
+
+.container-testimonios{
+  width: 80%; 
+  max-width: 1200px; 
+  margin: 0 auto; /* Centrado horizontalmente */
+  padding: 130px 20px; 
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  cursor: pointer;
+
+}
+
+.testimonios{
+  display: flex; 
+  gap: 20px;
+  width: max-content; /* Permite que el contenedor crezca con el contenido */
+  transition: transform 0.3s; /*Evento para agrandar y alejar la imagen leventemente*/
+}
+
+.testimonio:hover{
+  transform: scale(1.05); /*Evento para agrandar y alejar la imagen leventemente*/
+}
+
+.testimonio{
+  scroll-snap-align: start;
+  width: 300px; /* Ancho fijo para cada testimonio */
+  min-width: 300px; /* Evita que se reduzca */
+  height: auto;
+  padding: 30px;
+  background: #000000;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+blockquote{
+  font-style: italic;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+cite{
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  text-align: right;
+}
+
+
+/* Estilos de la barra de scroll */
+.container-testimonios::-webkit-scrollbar {
+  height: 8px;
+}
+  
+.container-testimonios::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+  
+.container-testimonios::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+  
+.container-testimonios::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1{
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+  background-color: #3498db;
+  padding: 20px;
+  margin-top: auto;
+}
+
+footer{
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,40 @@
+.contenedorGrid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    height: 100vh;
+    gap: 10px;
+    padding: auto;
+}
+
+.item{
+    background: #06131b;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.header {
+    grid-area: header;
+    background: #2c3e50;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #34495e;
+}
+
+.main {
+    grid-area: main;
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+
+.footer {
+    grid-area: footer;
+    background: #2c3e50;
+}

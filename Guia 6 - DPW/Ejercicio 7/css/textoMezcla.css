@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+
+.contenedor{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.textoMezclado{
+    font-size: 5em;
+    font-weight: bold;
+    color: #fff;
+    mix-blend-mode: overlay;
+    position: relative;
+    background: linear-gradient(45deg, #4a03f0, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    background-color: #3498db;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer{
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
